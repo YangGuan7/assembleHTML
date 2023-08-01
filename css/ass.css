@@ -1,0 +1,249 @@
+* {
+  box-sizing: border-box;
+}
+
+/* 1、顏色及框線變數 */
+:root {
+  --pirmary-bg: #fdfbef;
+  --primary-text: #4c4948;
+  --white: #fff;
+  --pink: #ffcbcc;
+  --light-pink: #ffeaeb;
+  --blue: #9fcfef;
+  --light-blue: #d8eeff;
+  --green: #badf73;
+  --light-green: #eaf6d5;
+  --yellow: #fff57f;
+  --deep-yellow: #dac900;
+  --purple: #d2bdff;
+  --light-purple: #f1eaff;
+  --gray: #a5a4a3;
+  --light-gray: #a5a4a3;
+
+  --primary-font-family: Roboto;
+  --primary-border: 3px solid #4c4948;
+}
+
+html,
+body {
+  background-color: var(--pirmary-bg);
+  height: 100%;
+}
+
+/* 2、header */
+.header-search {
+  width: 250px;
+  height: 36px;
+  margin: 20px;
+  border-radius: 30px;
+  border: 1px solid var(--primary-text, #4c4948);
+  background: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.header-icons img {
+  margin: 20px 10px 20px 20px;
+}
+.header-search input {
+  border: 0;
+  outline: none;
+
+  color: var(--primary-text);
+  font-size: 16px;
+  font-weight: 400;
+  letter-spacing: 8px;
+  padding-left: 10px;
+}
+
+.header-top {
+  display: flex;
+  justify-content: end;
+}
+.list-unstyled {
+  list-style: none;
+  display: flex;
+}
+
+.list-unstyled li {
+  margin: 0 0 0 50px;
+  font-size: 20px;
+  letter-spacing: 10px;
+  text-align: justify;
+}
+
+.list-unstyled li a,
+a:link {
+  text-decoration: none;
+  color: var(--primary-text);
+}
+
+.header-left {
+  flex-direction: column;
+}
+.main-header {
+  width: 100%;
+  height: 150px;
+  padding: 0 150px 0 150px;
+  margin: 0;
+  background-color: var(--white);
+  border-bottom: var(--primary-border);
+
+  display: flex;
+  align-items: center;
+  align-content: space-between;
+  justify-content: space-between;
+
+  /* position: fixed; */
+}
+
+/* 3、page頁面的最大div */
+.main-page {
+  width: 80%;
+  /* 設定寬度為螢幕寬度的 80% */
+  max-width: 1420px;
+  /* 設定最大寬度，避免內容過寬 */
+  margin: 50px auto;
+  /* 上間距 50px，左右間距置中 */
+  text-align: center;
+  min-height: 100%;
+  padding-bottom: 200px;
+}
+.main-page-title {
+  width: 80%;
+  /* 設定寬度為螢幕寬度的 80% */
+  max-width: 1420px;
+  /* 設定最大寬度，避免內容過寬 */
+  margin: 50px auto;
+  /* 上間距 50px，左右間距置中 */
+  text-align: center;
+}
+.market-main-page {
+  /* min-height: 100%; */
+  padding-bottom: 200px;
+  display: flex;
+}
+/* 4、返回箭頭群組 */
+.back-arrow {
+  display: flex;
+  width: 100%;
+  height: 48.721px;
+  align-items: center;
+  gap: 30px;
+}
+
+.back-text {
+  color: var(--primary-text);
+  font-family: var(--primary-font-family);
+  font-size: 24px;
+  font-weight: 700;
+  line-height: normal;
+  letter-spacing: 2.4px;
+}
+
+/* 5、頁面大標與英文 */
+.page-title {
+  color: var(--primary-text);
+  text-align: center;
+  font-family: var(--primary-font-family);
+  line-height: normal;
+  letter-spacing: 25px;
+  margin: 50px 0;
+}
+
+.page-title-ch {
+  font-size: 48px;
+  font-weight: 700;
+  letter-spacing: 24px;
+}
+
+.page-title-eng {
+  font-size: 30px;
+  font-weight: 400;
+  letter-spacing: 3px;
+}
+
+/* 6、footer */
+.main-footer {
+  width: 100%;
+  display: flex;
+  align-items: end;
+  justify-content: center;
+  height: 200px;
+  background: var(--white);
+  border-top: var(--primary-border);
+  position: absolute;
+  left: 0;
+  right: 0;
+}
+
+.icon-text-group {
+  width: 70px;
+  height: 70px;
+  position: absolute;
+  margin: -35px 0 0 -35px;
+  top: 50%;
+  left: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.icon-text-group img {
+  width: 45px;
+  height: 45px;
+  object-fit: cover;
+  object-position: center center;
+}
+.footer-icon-circle1 {
+  position: relative;
+  width: 150px;
+  height: 150px;
+  margin-inline: 25px;
+  background: var(--light-pink);
+  border: var(--primary-border);
+  border-radius: 50%;
+}
+
+.footer-icon-circle2 {
+  position: relative;
+  width: 150px;
+  height: 150px;
+  margin-inline: 25px;
+  background: var(--light-blue);
+  border: var(--primary-border);
+  border-radius: 50%;
+}
+
+.footer-icon-circle3 {
+  position: relative;
+  width: 150px;
+  height: 150px;
+  margin-inline: 25px;
+  background: var(--light-green);
+  border: var(--primary-border);
+  border-radius: 50%;
+}
+
+.icon-circle {
+  display: flex;
+  position: absolute;
+  margin: 0 0 75px -300px;
+  top: -75px;
+  left: 50%;
+}
+.footer-icon-text {
+  margin: 0;
+  width: 85px;
+  height: 25px;
+  color: var(--primary-text);
+  font-size: 18px;
+  text-align: center;
+}
+
+.footer-copy-right {
+  color: var(--primary-text);
+  letter-spacing: 2px;
+  text-align: center;
+  margin-bottom: 20px;
+}

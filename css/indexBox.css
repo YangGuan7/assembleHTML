@@ -1,0 +1,343 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+/* 1、顏色及框線變數 */
+:root {
+  --pirmary-bg: #fdfbef;
+  --primary-text: #4c4948;
+  --white: #fff;
+  --pink: #ffcbcc;
+  --light-pink: #ffeaeb;
+  --blue: #9fcfef;
+  --light-blue: #d8eeff;
+  --green: #badf73;
+  --light-green: #eaf6d5;
+  --yellow: #fff57f;
+  --deep-yellow: #dac900;
+  --purple: #d2bdff;
+  --light-purple: #f1eaff;
+  --gray: #a5a4a3;
+  --light-gray: #a5a4a3;
+
+  --primary-font-family: Roboto;
+  --primary-border: 3px solid #4c4948;
+}
+ul {
+  list-style: none;
+}
+.indexCarousel {
+  width: 1620px;
+  height: 740px;
+  margin: 50px auto;
+  position: relative;
+}
+.indexCarousel ul:nth-of-type(1) {
+  width: 100%;
+  height: 100%;
+  position: relative;
+}
+.indexCarousel ul:nth-of-type(1) li {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+.indexCarouselImgs {
+  width: 1620px;
+}
+.indexCarousel ul:nth-of-type(1) li img {
+  border: var(--primary-border);
+
+  width: 1620px;
+  max-height: 740px;
+  overflow: hidden;
+  object-fit: cover;
+  background-position: center center;
+  background-size: cover;
+}
+.active {
+  display: block;
+}
+.carouselBtn {
+  position: absolute;
+}
+.btn_at {
+  background-color: #9fcfef;
+  border: 2px solid #4c4948;
+}
+.btn_unat {
+  background-color: white;
+}
+.unactive {
+  display: none;
+}
+
+.indexCarousel ul:nth-of-type(2) {
+  position: absolute;
+  bottom: 6px;
+  width: 16%;
+  height: 5%;
+  left: 42%;
+}
+.indexCarousel ul:nth-of-type(2) li {
+  float: left;
+  border-radius: 100%;
+  width: 15px;
+  height: 15px;
+  margin: 10px 10.7%;
+}
+.indexCarouselLabel {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  left: -15px;
+  top: 20px;
+  margin: 20px 0;
+}
+.indexCarouselLocaGroup {
+  display: flex;
+  margin-bottom: 10px;
+}
+.indexCarouselTime {
+  margin-bottom: 10px;
+}
+
+.recruitLabel {
+  width: 270px;
+  font-size: 30px;
+  font-weight: 700;
+  letter-spacing: 7.5px;
+  border-radius: 0px 40px 40px 0px;
+  border: var(--primary-border);
+  background-color: var(--yellow);
+  padding: 10px 20px;
+  margin-bottom: 10px;
+}
+.indexCarouselLoca {
+  color: var(--primary-text);
+  font-size: 20px;
+  font-weight: 700;
+  margin-bottom: 10px;
+  padding: 10px 20px;
+  border: var(--primary-border);
+}
+.indexCarouselLocaDetail {
+  color: var(--primary-text);
+  font-size: 20px;
+  margin-bottom: 10px;
+  font-weight: 700;
+  padding: 10px 20px;
+  border: var(--primary-border);
+  border-left: none;
+}
+.marketInfoSolganBox {
+  position: absolute;
+  justify-content: end;
+
+  flex-direction: column;
+  right: -50px;
+  bottom: 50px;
+  letter-spacing: 5px;
+  display: flex;
+  text-align: center;
+}
+.marketInfoSolgan {
+  padding: 10px 50px;
+}
+.marketInfoName {
+  font-size: 60px;
+  margin-top: 10px;
+}
+
+/* 來當老闆三步驟 */
+.indexBossCircleBox {
+  display: flex;
+  margin-left: 150px;
+  justify-content: flex-start;
+  align-items: center;
+  margin-bottom: 50px;
+  position: relative;
+  margin-top: 90px;
+}
+.indexBossCircleBox > img {
+  position: absolute;
+  left: -150px;
+  z-index: 1;
+}
+.indexBoosStep {
+  position: absolute;
+  top: -90px;
+}
+.page-title {
+  color: var(--primary-text);
+  text-align: center;
+  font-family: var(--primary-font-family);
+  line-height: normal;
+  letter-spacing: 25px;
+  /* margin: 50px 0; */
+}
+.index-main-page {
+  padding-bottom: 200px;
+  display: flex;
+  flex-direction: column;
+}
+.indexBossCircle {
+  margin: 0 50px 0 0;
+  width: 300px;
+  height: 300px;
+  border-radius: 300px;
+  background-color: #fff;
+  border: var(--primary-border);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  z-index: 100;
+}
+.indexBossCircle > img {
+  width: 100px;
+}
+.indexBossCircleText {
+  padding: 20px 0;
+}
+.indexBossCircleB {
+  padding: 0 0 10px 0;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  letter-spacing: 4.8px;
+}
+.indexBossCircleP {
+  text-align: center;
+  font-family: Roboto;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  letter-spacing: 1.8px;
+}
+.indexBossTitle {
+  position: absolute;
+  right: 150px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+/* 招募卡片 */
+.indexRecruitCardGroup {
+  display: flex;
+  width: 1770px;
+  /* flex-wrap: wrap; */
+  margin-left: 150px;
+}
+
+.indexRecruitCard {
+  width: 380px;
+  height: 425px;
+  margin-right: 50px;
+
+  /* background-image: url("../images/indexBossCard.svg"); */
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  margin-top: 40px;
+  font-size: 24px;
+  font-weight: bold;
+}
+.indexRecruitCardBG {
+  position: absolute;
+  width: 380px;
+  height: 425px;
+
+  z-index: 1;
+  object-fit: cover;
+  background-position: center center;
+  background-size: cover;
+}
+.indexRecruitCardIcon {
+  position: absolute;
+  width: 22.5px;
+  right: 20px;
+  top: -10px;
+  z-index: 100;
+}
+
+.indexRecruitCardContext {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto;
+}
+.indexRecruitCardimg {
+  width: 340px;
+  height: 160px;
+  border: var(--primary-border);
+  /* margin: 0 auto; */
+  object-fit: cover;
+  background-position: center center;
+  margin-left: 20px;
+  background-size: cover;
+  z-index: 100;
+}
+
+.indexRecruitCardLoca {
+  color: var(--primary-text);
+  font-size: 20px;
+  font-weight: 700;
+  padding: 10px 20px;
+  border: var(--primary-border);
+  margin-top: -20px;
+  margin-left: 20px;
+  z-index: 100;
+  position: absolute;
+}
+
+.indexRecruitCardTitle {
+  padding: 10px 20px 10px 20px;
+  margin-top: 35px;
+  z-index: 100;
+  font-size: 24px;
+}
+.indexRecruitCardTime {
+  padding: 10px 20px 10px 20px;
+  z-index: 100;
+  font-size: 18px;
+}
+.indexRecruitCardP {
+  font-size: 18px;
+  z-index: 100;
+
+  padding-right: 20px;
+  margin: 0 20px;
+
+  text-align: justify;
+  text-justify: distribute;
+  overflow: hidden;
+  /* 文字多於2行隱藏 */
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+}
+.indexRecruitButton {
+  position: absolute;
+  z-index: 100;
+  bottom: 17px;
+  margin: 0 20px;
+  right: -5px;
+  width: 265px;
+  /* height: 40px; */
+  padding: 5px 0;
+  border: var(--primary-border);
+  background-color: var(--yellow);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.indexRecruitButton > p {
+  font-size: 18px;
+  letter-spacing: 1.8px;
+}

@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>AssembleBlog</title>
+    <link rel="stylesheet" href="/css/ass.css" />
+    <link rel="stylesheet" href="/css/normalize.css" />
+    <link rel="stylesheet" href="/css/blog.css" />
+    <link rel="stylesheet" href="./css/marketSeatchStyle.css" />
+    <link rel="stylesheet" href="./css/indexBox.css" />
+  </head>
+  <body>
+    <!-- header -->
+    <header class="main-header">
+      <a href="/"><img src="/images/logo.svg" /></a>
+      <div class="header-left">
+        <div class="header-top">
+          <div class="header-search">
+            <img src=images/search.svg width="15" height="15">
+            <input type="text" placeholder="|搜尋市集..." />
+          </div>
+          <div class="header-icons">
+            <a href=""><img src="/images/Shopping Cart.svg" /></a>
+            <a href=""><img src="/images/user-circle.svg" /></a>
+          </div>
+        </div>
+        <ul class="list-unstyled">
+          <li><a href="">找市集</a></li>
+          <li><a href="">攤商報名</a></li>
+          <li><a href="">找商品</a></li>
+          <li><a href="">部落格</a></li>
+          <li><a href="">來討論</a></li>
+          <li><a href="">會員中心</a></li>
+        </ul>
+      </div>
+    </header>
+
+    <!-- 內文開始 -->
+
+    <div class="indexCarousel">
+      <ul id="indexCarouselImgs">
+        <li class="active">
+          <div class="indexCarouselLabel">
+            <span class="recruitLabel">#攤商大募集</span>
+
+            <div class="indexCarouselLocaGroup">
+              <span class="indexCarouselLoca marletKHH">高雄 · Kaohsiung</span>
+              <span class="indexCarouselLocaDetail marletWH">壽山動物園</span>
+            </div>
+            <div class="indexCarouselTime">
+              <span class="indexCarouselLoca marletWH"
+                >2023.09.09 ~ 2023.09.10 10:00~20:00</span
+              >
+            </div>
+            <span class="marketInfoName marletWH">療癒計畫｜花草嗅覺派對</span>
+          </div>
+          <div class="marketInfoSolganBox">
+            <span class="marketInfoSolgan marletWH"
+              >重新建立與自然、土地的連結<br />重新建構自我的休憩地，重回春意的懷抱。</span
+            >
+          </div>
+
+          <img src="./images/market_01.jpg" alt="" />
+        </li>
+
+        <li class="unactive">
+          <div class="indexCarouselLabel">
+            <span class="recruitLabel">#攤商大募集</span>
+
+            <div class="indexCarouselLocaGroup">
+              <span class="indexCarouselLoca marletTNN">台南 · Tainan</span>
+              <span class="indexCarouselLocaDetail marletWH"
+                >藍晒圖文創園區</span
+              >
+            </div>
+            <div class="indexCarouselTime">
+              <span class="indexCarouselLoca marletWH"
+                >2023.12.25 ~ 2023.12.30 10:00~20:00</span
+              >
+            </div>
+            <span class="marketInfoName marletWH">盛夏・微光市集</span>
+          </div>
+          <div class="marketInfoSolganBox">
+            <span class="marketInfoSolgan marletWH"
+              >在這裡挑選一份小驚喜，送給自己或是心上人<br />感受夏日的的浪漫，悠閒逛著各式獨特品牌，一起度過甜蜜蜜好時光</span
+            >
+          </div>
+          <img src="./images/market_02.jpg" alt="" />
+        </li>
+
+        <li class="unactive">
+          <div class="indexCarouselLabel">
+            <span class="recruitLabel">#攤商大募集</span>
+
+            <div class="indexCarouselLocaGroup">
+              <span class="indexCarouselLoca marletCYI">嘉義·Chiayi</span>
+              <span class="indexCarouselLocaDetail marletWH"
+                >嘉義文化創意產業園區</span
+              >
+            </div>
+            <div class="indexCarouselTime">
+              <span class="indexCarouselLoca marletWH"
+                >2023.09.16 ~ 2023.09.17 10:00~20:00</span
+              >
+            </div>
+            <span class="marketInfoName marletWH">回嘉．設計節</span>
+          </div>
+          <div class="marketInfoSolganBox">
+            <span class="marketInfoSolgan marletWH"
+              >回嘉設計市集，與設計師相約嘉義<br />讓設計點亮嘉義，共享設計的饗宴！</span
+            >
+          </div>
+          <img src="./images/booth01.jpg" alt="" />
+        </li>
+      </ul>
+      <!-- <button class="left_btn">&lt;</button> -->
+      <!-- 向左按鈕 -->
+      <!-- <button class="right_btn">&gt;</button> -->
+      <!-- 向右按鈕 -->
+      <!-- 輪播圖下面的小圓點 -->
+      <ul class="carouselBtn" id="btns">
+        <li class="btn_at"></li>
+        <li class="btn_unat"></li>
+        <li class="btn_unat"></li>
+      </ul>
+    </div>
+
+    <div class="index-main-page">
+      <div class="indexBossCircleBox">
+        <div class="indexBossCircle">
+          <img class="indexBoosStep" src="./images/step1.svg" alt="" />
+          <img src="./images/Facebook.svg" alt="" />
+          <div class="indexBossCircleText">
+            <p class="indexBossCircleB">加入會員</p>
+            <p class="indexBossCircleP">馬上註冊<br />ASSEMBLE會員</p>
+          </div>
+        </div>
+        <div class="indexBossCircle">
+          <img class="indexBoosStep" src="./images/step2.svg" alt="" />
+          <img src="./images/Facebook.svg" alt="" />
+          <div class="indexBossCircleText">
+            <p class="indexBossCircleB">升級攤商身分</p>
+            <p class="indexBossCircleP">填寫品牌相關資訊後<br />等待審核</p>
+          </div>
+        </div>
+        <div class="indexBossCircle">
+          <img class="indexBoosStep" src="./images/step3.svg" alt="" />
+          <img src="./images/Facebook.svg" alt="" />
+          <div class="indexBossCircleText">
+            <p class="indexBossCircleB">來當老闆!</p>
+            <p class="indexBossCircleP">
+              審核成功即可開始<br />報名市集場次</p>
+            </p>
+          </div>
+        </div>
+
+        <img src="./images/indexLongArrow.svg" alt="" />
+
+        <div class="indexBossTitle">
+          <div class="page-title-ch">/來當老闆/</div>
+          <div class="page-title-eng">Be The Boss　</div>
+        </div>
+      </div>
+
+      <div class="indexRecruitCardGroup">
+        <!-- 高雄 -->
+        <div class="indexRecruitCard">
+          <span class="indexRecruitCardLoca marletKHH">高雄 · Kaohsiung</span>
+          <img
+            class="indexRecruitCardIcon"
+            src="./images/paperclip.svg"
+            alt=""
+          />
+          <div class="indexRecruitCardContext">
+            <span class="indexRecruitCardTitle">我是市集標題</span>
+            <img
+              class="indexRecruitCardimg"
+              src="./images/market_01.jpg"
+              alt=""
+            />
+            <span class="indexRecruitCardTime">2023/09/04~2023/09/05</span>
+            <span class="indexRecruitCardP">
+              我是市集的文字內容我是市集的文字內容我是市集的文字內容我是市集的文字內容我是市集的文字內容
+              我是市集的文字內容我是市集的文字內容我是市集的文字內容我是市集的文字內容
+            </span>
+            <img class="indexRecruitCardBG" src="../images/indexBossCard.svg" alt="">
+          </div>
+
+          <button class="indexRecruitButton"><p>點我報名</p></button>
+        </div>
+        <!-- 嘉義 -->
+        <div class="indexRecruitCard">
+          <span class="indexRecruitCardLoca marletCYI">嘉義·Chiayi</span>
+          <img
+            class="indexRecruitCardIcon"
+            src="./images/paperclip.svg"
+            alt=""
+          />
+          <div class="indexRecruitCardContext">
+            <span class="indexRecruitCardTitle">我是市集標題</span>
+            <img
+              class="indexRecruitCardimg"
+              src="./images/market_01.jpg"
+              alt=""
+            />
+            <span class="indexRecruitCardTime">2023/09/04~2023/09/05</span>
+            <span class="indexRecruitCardP">
+              我是市集的文字內容我是市集的文字內容我是市集的文字內容我是市集的文字內容我是市集的文字內容
+              我是市集的文字內容我是市集的文字內容我是市集的文字內容我是市集的文字內容
+            </span>
+             <img class="indexRecruitCardBG" src="../images/indexBossCard.svg" alt="">
+          </div>
+
+          <button class="indexRecruitButton"><p>點我報名</p></button>
+        </div>
+        <!-- 台南 -->
+        <div class="indexRecruitCard">
+          <span class="indexRecruitCardLoca marletTNN">台南·Tainan</span>
+          <img
+            class="indexRecruitCardIcon"
+            src="./images/paperclip.svg"
+            alt=""
+          />
+          <div class="indexRecruitCardContext">
+            <span class="indexRecruitCardTitle">我是市集標題</span>
+            <img
+              class="indexRecruitCardimg"
+              src="./images/market_01.jpg"
+              alt=""
+            />
+            <span class="indexRecruitCardTime">2023/09/04~2023/09/05</span>
+            <span class="indexRecruitCardP">
+              我是市集的文字內容我是市集的文字內容我是市集的文字內容我是市集的文字內容我是市集的文字內容
+              我是市集的文字內容我是市集的文字內容我是市集的文字內容我是市集的文字內容
+            </span>
+             <img class="indexRecruitCardBG" src="../images/indexBossCard.svg" alt="">
+          </div>
+
+          <button class="indexRecruitButton"><p>點我報名</p></button>
+        </div>
+        <!-- 屏東 -->
+        <div class="indexRecruitCard">
+          <span class="indexRecruitCardLoca marletPIF">屏東·Pingtung</span>
+          <img
+            class="indexRecruitCardIcon"
+            src="./images/paperclip.svg"
+            alt=""
+          />
+          <div class="indexRecruitCardContext">
+            <span class="indexRecruitCardTitle">我是市集標題</span>
+            <img
+              class="indexRecruitCardimg"
+              src="./images/market_01.jpg"
+              alt=""
+            />
+            <span class="indexRecruitCardTime">2023/09/04~2023/09/05</span>
+            <span class="indexRecruitCardP">
+              我是市集的文字內容我是市集的文字內容我是市集的文字內容我是市集的文字內容我是市集的文字內容
+              我是市集的文字內容我是市集的文字內容我是市集的文字內容我是市集的文字內容
+            </span>
+          </div>
+
+          <button class="indexRecruitButton"><p>點我報名</p></button> 
+          <img class="indexRecruitCardBG" src="../images/indexBossCard.svg" alt="">
+        </div>
+      </div>
+
+      
+    </div>
+    <!-- 內文結束 -->
+
+    <!-- footer -->
+    <footer class="main-footer">
+      <div class="icon-circle">
+        <div class="footer-icon-circle1">
+          <div class="icon-text-group">
+            <a href=""><img src="/images/Instagram Old.png" /></a>
+            <p class="footer-icon-text">Instagram</p>
+          </div>
+        </div>
+
+        <div class="footer-icon-circle2">
+          <div class="icon-text-group">
+            <a href=""><img src="/images/YouTube.png" /></a>
+            <p class="footer-icon-text">Youtube</p>
+          </div>
+        </div>
+
+        <div class="footer-icon-circle3">
+          <div class="icon-text-group">
+            <a href=""><img src="/images/Facebook.png" /></a>
+            <p class="footer-icon-text">Facebook</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <img src="/images/logo.svg" />
+
+        <div class="footer-copy-right">ASSEMBLE®Copy Right</div>
+      </div>
+    </footer>
+
+    <script src="./JS/indexCarousel.js"></script>
+  </body>
+</html>

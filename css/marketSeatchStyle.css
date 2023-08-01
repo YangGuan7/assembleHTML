@@ -1,0 +1,377 @@
+* {
+  color: #4c4948;
+  font-family: "Roboto", sans-serif;
+  margin: 0;
+}
+/* 1、顏色及框線變數 */
+:root {
+  --pirmary-bg: #fdfbef;
+  --primary-text: #4c4948;
+  --white: #fff;
+  --pink: #ffcbcc;
+  --light-pink: #ffeaeb;
+  --blue: #9fcfef;
+  --light-blue: #d8eeff;
+  --green: #badf73;
+  --light-green: #eaf6d5;
+  --yellow: #fff57f;
+  --deep-yellow: #dac900;
+  --purple: #d2bdff;
+  --light-purple: #f1eaff;
+  --gray: #a5a4a3;
+  --light-gray: #a5a4a3;
+
+  --primary-font-family: Roboto;
+  --primary-border: 3px solid #4c4948;
+}
+.marletWH {
+  background-color: var(--white);
+}
+.marletKHH {
+  background-color: var(--blue);
+}
+.marletTNN {
+  background-color: var(--purple);
+}
+.marletPIF {
+  background-color: var(--green);
+}
+.marletCYI {
+  background-color: var(--pink);
+}
+.marletKHHLight {
+  background-color: var(--light-blue);
+}
+.marletTNNLight {
+  background-color: var(--light-purple);
+}
+.marletPIFLight {
+  background-color: var(--light-green);
+}
+.marletCYILight {
+  background-color: var(--light-pink);
+}
+
+.marketCardImg {
+  border: var(--primary-border);
+  width: 400px;
+  border-left: none;
+}
+.marketCardImg > img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  background-position: center center;
+  background-size: cover;
+}
+
+.marketPageRight {
+  background-color: white;
+  background-image: url(../images/map.png);
+  width: 100%;
+  height: 650px;
+  /* height: 100%; */
+  border: var(--primary-border);
+  border-left: none;
+  background-position: center center;
+  background-size: cover;
+
+  object-fit: cover;
+}
+.searchMarketSwitch {
+  display: flex;
+  justify-content: center;
+}
+.searchMarketSwitchMap {
+  width: 230px;
+  padding: 10px 20px;
+  font-size: 24px;
+  font-weight: 700;
+  display: flex;
+  justify-content: center;
+  border-radius: 50px 0px 0px 50px;
+  align-items: center;
+  border: var(--primary-border);
+  border-right: none;
+  background-color: var(--yellow);
+}
+.searchMarketSwitchCalendar {
+  width: 230px;
+  padding: 10px 20px;
+  font-size: 24px;
+  font-weight: 700;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 0px 50px 50px 0px;
+  border: var(--primary-border);
+  background-color: var(--white);
+}
+.fourLoca {
+  position: relative;
+  margin-top: 20px;
+  display: flex;
+  /* justify-content: space-around; */
+  justify-content: center;
+  /* justify-content: space-between; */
+}
+.market4Loca {
+  font-size: 24px;
+  font-weight: 700;
+  text-align: center;
+  /* letter-spacing: 24px; */
+  padding: 10px 50px;
+  margin: 0 20px;
+  display: flex;
+  justify-content: center;
+  border: var(--primary-border);
+  list-style: none;
+  flex-wrap: nowrap;
+}
+.marketPageLeft {
+  /* width: 900px; */
+  height: 650px;
+  width: 100%;
+  display: flex;
+  padding: 50px 20px;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  border: var(--primary-border);
+  background-color: white;
+}
+
+.marketSearchArea {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.marketSearchSelect {
+  height: 62px;
+  width: 203px;
+
+  padding: 10px 20px;
+
+  font-size: 20px;
+  font-weight: 700;
+  border-radius: 30px;
+  border: 3px solid var(--primary-text, #4c4948);
+  margin-right: 20px;
+
+  /* 隱藏箭頭 */
+  /* -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none; */
+}
+
+.marketSearch {
+  width: 586px;
+  height: 62px;
+  padding: 0 20px;
+  border-radius: 30px;
+  border: 3px solid var(--primary-text, #4c4948);
+  background: #fff;
+
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+.marketSearchInput {
+  width: 500px;
+  border: 0;
+  outline: none;
+  color: var(--primary-text);
+
+  font-size: 20px;
+  font-weight: 400;
+  letter-spacing: 8px;
+  padding-left: 10px;
+  border: 0;
+  outline: none;
+}
+.marketCard {
+  width: 100%;
+  margin-top: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  overflow: auto;
+}
+.marketCardKH {
+  display: flex;
+  padding-top: 45px;
+}
+.marketCardLoca {
+  color: var(--primary-text);
+  font-size: 20px;
+  font-weight: 700;
+  padding: 10px 20px;
+  border: var(--primary-border);
+  /* margin: -85px -22px; */
+  margin-top: -280px;
+  margin-left: -23px;
+  z-index: 2;
+}
+.marketCardText {
+  z-index: 1;
+  width: 405px;
+  padding: 0 20px;
+  padding-bottom: 10px;
+  padding-top: 250px;
+  border: var(--primary-border);
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+.marketCardTitle {
+  font-size: 24px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  font-weight: bold;
+}
+.marketCardTime {
+  font-size: 18px;
+  padding-bottom: 20px;
+}
+.marketCardP {
+  font-size: 18px;
+  text-align: justify;
+  text-justify: distribute;
+  overflow: hidden;
+  /* 文字多於2行隱藏 */
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+}
+
+/* 隱藏滾動卷軸條 */
+::-webkit-scrollbar {
+  display: none;
+}
+.marketButton {
+  margin: 20px 0;
+  width: 100%;
+  height: 40px;
+  border: var(--primary-border);
+  background-color: var(--yellow);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 22.5px;
+  align-items: center;
+}
+.marketButtonP {
+  font-size: 18px;
+  letter-spacing: 1.8px;
+}
+
+/* 市集資訊頁面 */
+
+.boothList {
+  width: 100%;
+  border: var(--primary-border);
+  border-bottom: none;
+  border-right: none;
+
+  display: flex;
+  flex-wrap: wrap;
+
+  justify-content: space-between;
+  /* align-items: stretch; */
+}
+.boothCard {
+  width: 20%;
+  border-bottom: var(--primary-border);
+  border-right: var(--primary-border);
+}
+.boothCard > img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  background-position: center center;
+  background-size: cover;
+}
+
+.marketInfo {
+  display: flex;
+  margin: 0 50px;
+  justify-content: center;
+
+  align-items: flex-start;
+}
+.marketInfoCover {
+  margin-right: 50px;
+}
+.marketInfoCover > img {
+  border: var(--primary-border);
+  width: 730px;
+  height: 430px;
+  object-fit: cover;
+  background-position: center center;
+  background-size: cover;
+}
+
+.marketInfoList {
+  width: 640px;
+  display: flex;
+  /* justify-content: center; */
+  flex-direction: column;
+  /* justify-content: center; */
+  /* align-items: flex-start; */
+  /* margin-bottom: 20px; */
+  padding: 0 0 20px 0;
+}
+
+.marketInfoLoca {
+  color: var(--primary-text);
+  font-size: 20px;
+  font-weight: 700;
+  padding: 10px 20px;
+  border: var(--primary-border);
+  border-bottom: none;
+}
+.marketInfoLocaDetail {
+  color: var(--primary-text);
+  font-size: 20px;
+  font-weight: 700;
+  padding: 10px 20px;
+  border: var(--primary-border);
+  border-left: none;
+  border-bottom: none;
+}
+.marketInfoLocaGroup {
+  display: flex;
+}
+
+.marketInfoName {
+  /* width: 640px; */
+  font-size: 48px;
+  font-weight: 900;
+  border: var(--primary-border);
+  padding: 20px;
+}
+.marketInfoTime {
+  font-size: 18px;
+  padding: 10px 20px;
+  width: 100%;
+  border: var(--primary-border);
+}
+.marketInfoSolgan {
+  font-size: 18px;
+  font-weight: 700;
+  padding: 10px 20px;
+  width: 100%;
+  border: var(--primary-border);
+  text-align: center;
+}
+.marketInfoText {
+  padding: 10px 20px;
+  width: 100%;
+
+  border: var(--primary-border);
+}

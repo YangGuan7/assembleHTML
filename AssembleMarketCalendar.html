@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>AssembleBlog</title>
+    <link rel="stylesheet" href="/css/ass.css" />
+    <link rel="stylesheet" href="/css/normalize.css" />
+    <link rel="stylesheet" href="/css/blog.css" />
+    <link rel="stylesheet" href="./css/marketSeatchStyle.css" />
+    <link rel="stylesheet" href="./css/calendar.css" />
+  </head>
+  <body>
+    <!-- header -->
+    <header class="main-header">
+      <a href="/"><img src="/images/logo.svg" /></a>
+      <div class="header-left">
+        <div class="header-top">
+          <div class="header-search">
+            <img src=images/search.svg width="15" height="15">
+            <input type="text" placeholder="|搜尋市集..." />
+          </div>
+          <div class="header-icons">
+            <a href=""><img src="/images/Shopping Cart.svg" /></a>
+            <a href=""><img src="/images/user-circle.svg" /></a>
+          </div>
+        </div>
+        <ul class="list-unstyled">
+          <li><a href="">找市集</a></li>
+          <li><a href="">攤商報名</a></li>
+          <li><a href="">找商品</a></li>
+          <li><a href="">部落格</a></li>
+          <li><a href="">來討論</a></li>
+          <li><a href="">會員中心</a></li>
+        </ul>
+      </div>
+    </header>
+
+    <!-- main -->
+    <div class="main-page-title">
+      <!-- <div class="back-arrow">
+        <img src="/images/back.svg" />
+        <p class="back-text">BACK</p>
+      </div> -->
+
+      <div class="page-title">
+        <div class="page-title-ch">/找市集/</div>
+        <div class="page-title-eng">Search Market　</div>
+      </div>
+      <!-- <ul class="fourLoca">
+        <li class="market4Loca marletKHH">高雄</li>
+        <li class="market4Loca marletTNN">台南</li>
+        <li class="market4Loca marletPIF">屏東</li>
+        <li class="market4Loca marletCYI">嘉義</li>
+      </ul> -->
+    </div>
+    <!-- 內文開始 -->
+    <div class="market-main-page">
+      <div class="CalendarPageLeft">
+        <div class="calendar">
+          <div class="title">
+            <h1 class="green" id="calendar-title">Month</h1>
+            <h2 class="green small" id="calendar-year">Year</h2>
+            <a href="" id="prev">Prev Month</a>
+            <a href="" id="next">Next Month</a>
+          </div>
+          <div class="body">
+            <div class="lightgrey body-list">
+              <ul>
+                <li>MON</li>
+                <li>TUE</li>
+                <li>WED</li>
+                <li>THU</li>
+                <li>FRI</li>
+                <li>SAT</li>
+                <li>SUN</li>
+              </ul>
+            </div>
+            <div class="darkgrey body-list">
+              <ul id="days"></ul>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- 地圖搜尋列表 -->
+      <div class="CalendarPageRight">
+        <div class="marketSearchArea">
+          <select class="marketSearchSelect" name="" id="">
+            <option value="">全部搜尋</option>
+            <option value="">地點搜尋</option>
+            <option value="">市集名稱</option>
+            <option value="">日期搜尋</option>
+            <option value="">時間搜尋</option>
+          </select>
+
+          <div class="marketSearch">
+            <img src=images/search.svg width="25" height="25">
+            <input
+              class="marketSearchInput"
+              type="text"
+              placeholder="|搜尋市集..."
+            />
+          </div>
+        </div>
+        <div class="marketCard">
+          <!-- 市集卡片 -->
+          <!-- 高雄 -->
+          <span class="marketCardKH">
+            <span class="marketCardText marletKHHLight">
+              <span class="marketCardLoca marletKHH">高雄 · Kaohsiung</span>
+              <span class="marketCardTitle">我是市集標題</span>
+              <span class="marketCardTime">2023/09/04~2023/09/05</span>
+              <span class="marketCardTime">10:00~16:00</span>
+              <span class="marketCardP">
+                我是市集的文字內容我是市集的文字內容我是市集的文字內容我是市集的文字內容我是市集的文字內容
+                我是市集的文字內容我是市集的文字內容我是市集的文字內容我是市集的文字內容
+                我是市集的文字內容我是市集的文字內容我是市集的文字內容我是市集的文字內容
+                我是市集的文字內容我是市集的文字內容
+              </span>
+
+              <a href="" class="marketButton">
+                <div class="marketButtonP">更多市集活動資訊</div>
+              </a>
+            </span>
+            <span class="marketCardImg">
+              <img src="/images/market_01.jpg" alt="" />
+            </span>
+          </span>
+          <!-- 嘉義 -->
+          <span class="marketCardKH">
+            <span class="marketCardText marletCYILight">
+              <span class="marketCardLoca marletCYI">嘉義 · Chiayi</span>
+              <span class="marketCardTitle">我是市集標題</span>
+              <span class="marketCardTime">2023/09/04~2023/09/05</span>
+              <span class="marketCardTime">10:00~16:00</span>
+              <span class="marketCardP">
+                我是市集的文字內容我是市集的文字內容我是市集的文字內容我是市集的文字內容我是市集的文字內容
+                我是市集的文字內容我是市集的文字內容我是市集的文字內容我是市集的文字內容
+                我是市集的文字內容我是市集的文字內容我是市集的文字內容我是市集的文字內容
+                我是市集的文字內容我是市集的文字內容
+              </span>
+
+              <a href="" class="marketButton">
+                <div class="marketButtonP">更多市集活動資訊</div>
+              </a>
+            </span>
+            <span class="marketCardImg">
+              <img src="/images/market_01.jpg" alt="" />
+            </span>
+          </span>
+          <!-- 屏東 -->
+          <span class="marketCardKH">
+            <span class="marketCardText marletPIFLight">
+              <span class="marketCardLoca marletPIF">屏東 · Pingtung</span>
+              <span class="marketCardTitle">我是市集標題</span>
+              <span class="marketCardTime">2023/09/04~2023/09/05</span>
+              <span class="marketCardTime">10:00~16:00</span>
+              <span class="marketCardP">
+                我是市集的文字內容我是市集的文字內容我是市集的文字內容我是市集的文字內容我是市集的文字內容
+                我是市集的文字內容我是市集的文字內容我是市集的文字內容我是市集的文字內容
+                我是市集的文字內容我是市集的文字內容我是市集的文字內容我是市集的文字內容
+                我是市集的文字內容我是市集的文字內容
+              </span>
+
+              <a href="" class="marketButton">
+                <div class="marketButtonP">更多市集活動資訊</div>
+              </a>
+            </span>
+            <span class="marketCardImg">
+              <img src="/images/market_01.jpg" alt="" />
+            </span>
+          </span>
+          <!-- 台南 -->
+          <span class="marketCardKH">
+            <span class="marketCardText marletTNNLight">
+              <span class="marketCardLoca marletTNN">台南 · Tainan</span>
+              <span class="marketCardTitle">我是市集標題</span>
+              <span class="marketCardTime">2023/09/04~2023/09/05</span>
+              <span class="marketCardTime">10:00~16:00</span>
+              <span class="marketCardP">
+                我是市集的文字內容我是市集的文字內容我是市集的文字內容我是市集的文字內容我是市集的文字內容
+                我是市集的文字內容我是市集的文字內容我是市集的文字內容我是市集的文字內容
+                我是市集的文字內容我是市集的文字內容我是市集的文字內容我是市集的文字內容
+                我是市集的文字內容我是市集的文字內容
+              </span>
+
+              <a href="" class="marketButton">
+                <div class="marketButtonP">更多市集活動資訊</div>
+              </a>
+            </span>
+            <span class="marketCardImg">
+              <img src="/images/market_01.jpg" alt="" />
+            </span>
+          </span>
+        </div>
+      </div>
+    </div>
+
+    <!-- 內文結束 -->
+
+    <!-- footer -->
+    <footer class="main-footer">
+      <div class="icon-circle">
+        <div class="footer-icon-circle1">
+          <div class="icon-text-group">
+            <a href=""><img src="/images/Instagram Old.png" /></a>
+            <p class="footer-icon-text">Instagram</p>
+          </div>
+        </div>
+
+        <div class="footer-icon-circle2">
+          <div class="icon-text-group">
+            <a href=""><img src="/images/YouTube.png" /></a>
+            <p class="footer-icon-text">Youtube</p>
+          </div>
+        </div>
+
+        <div class="footer-icon-circle3">
+          <div class="icon-text-group">
+            <a href=""><img src="/images/Facebook.png" /></a>
+            <p class="footer-icon-text">Facebook</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <img src="/images/logo.svg" />
+
+        <div class="footer-copy-right">ASSEMBLE®Copy Right</div>
+      </div>
+    </footer>
+
+    <!-- <script
+      type="text/javascript"
+      color="0,0,0"
+      opacity=".5"
+      zIndex="1"
+      count="500"
+      src="https://cdnjs.cloudflare.com/ajax/libs/canvas-nest.js/2.0.4/canvas-nest.js"
+      integrity="sha512-P+NGabN/TJDOnCVOFJO+E06TBm4i+M8dTT91lWg/8UpwLrzicEXIypmABPpA47D0x6r+yxFHjYIZKWhc1h7xlQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script> -->
+  </body>
+</html>

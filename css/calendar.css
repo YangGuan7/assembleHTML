@@ -1,0 +1,165 @@
+* {
+  color: #4c4948;
+  font-family: "Roboto", sans-serif;
+  margin: 0;
+}
+/* 1、顏色及框線變數 */
+:root {
+  --pirmary-bg: #fdfbef;
+  --primary-text: #4c4948;
+  --white: #fff;
+  --pink: #ffcbcc;
+  --light-pink: #ffeaeb;
+  --blue: #9fcfef;
+  --light-blue: #d8eeff;
+  --green: #badf73;
+  --light-green: #eaf6d5;
+  --yellow: #fff57f;
+  --deep-yellow: #dac900;
+  --purple: #d2bdff;
+  --light-purple: #f1eaff;
+  --gray: #a5a4a3;
+  --light-gray: #a5a4a3;
+
+  --primary-font-family: Roboto;
+  --primary-border: 3px solid #4c4948;
+}
+.CalendarPageLeft {
+  background-color: white;
+  /* background-image: url(../images/map.png); */
+  width: 100%;
+  height: 650px;
+  /* height: 100%; */
+  border: var(--primary-border);
+  border-right: none;
+  background-position: center center;
+  background-size: cover;
+
+  object-fit: cover;
+}
+.CalendarPageRight {
+  /* width: 900px; */
+  height: 650px;
+  width: 100%;
+  display: flex;
+  padding: 50px 20px;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  border: var(--primary-border);
+  background-color: white;
+}
+.calendar {
+  width: 100%;
+  height: 100%;
+  background: #fff;
+  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.1);
+}
+.body-list ul {
+  width: 100%;
+  font-family: arial;
+  font-weight: bold;
+  font-size: 14px;
+}
+.body-list ul li {
+  width: 14.28%;
+  height: 36px;
+  line-height: 36px;
+  list-style-type: none;
+  display: block;
+  box-sizing: border-box;
+  float: left;
+  text-align: center;
+}
+.lightgrey {
+  color: #a8a8a8; /*浅灰色*/
+}
+.darkgrey {
+  color: #565656; /*深灰色*/
+}
+.green {
+  color: #6ac13c; /*绿色*/
+}
+.greenbox {
+  border: 1px solid #6ac13c;
+  background: #e9f8df; /*浅绿色背景*/
+}
+
+/*  */
+ul {
+  list-style-type: none;
+}
+body {
+  font-family: Verdana, sans-serif;
+}
+
+/* Month header */
+.month {
+  padding: 70px 25px;
+  width: 100%;
+  background: #1abc9c;
+  text-align: center;
+}
+
+/* Month list */
+.month ul {
+  margin: 0;
+  padding: 0;
+}
+
+.month ul li {
+  color: white;
+  font-size: 20px;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+}
+
+/* Previous button inside month header */
+.month .prev {
+  float: left;
+  padding-top: 10px;
+}
+
+/* Next button */
+.month .next {
+  float: right;
+  padding-top: 10px;
+}
+
+/* Weekdays (Mon-Sun) */
+.weekdays {
+  margin: 0;
+  padding: 10px 0;
+  background-color: #ddd;
+}
+
+.weekdays li {
+  display: inline-block;
+  width: 13.6%;
+  color: #666;
+  text-align: center;
+}
+
+/* Days (1-31) */
+.days {
+  padding: 10px 0;
+  background: #eee;
+  margin: 0;
+}
+
+.days li {
+  list-style-type: none;
+  display: inline-block;
+  width: 13.6%;
+  text-align: center;
+  margin-bottom: 5px;
+  font-size: 12px;
+  color: #777;
+}
+
+/* Highlight the "current" day */
+.days li .active {
+  padding: 5px;
+  background: #1abc9c;
+  color: white !important;
+}
