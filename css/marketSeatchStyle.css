@@ -319,11 +319,7 @@
 .marketInfoList {
   width: 640px;
   display: flex;
-  /* justify-content: center; */
   flex-direction: column;
-  /* justify-content: center; */
-  /* align-items: flex-start; */
-  /* margin-bottom: 20px; */
   padding: 0 0 20px 0;
 }
 
