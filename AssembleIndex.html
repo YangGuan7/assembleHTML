@@ -12,7 +12,7 @@
   </head>
   <body>
     <!-- header -->
-    <header class="main-header">
+    <nav class="main-header">
       <a href="/"><img src="/images/logo.svg" /></a>
       <div class="header-left">
         <div class="header-top">
@@ -34,11 +34,12 @@
           <li><a href="">會員中心</a></li>
         </ul>
       </div>
-    </header>
+    </nav>
 
     <!-- 內文開始 -->
 
-    <div class="indexCarousel">
+    <!-- 輪播圖 ---------------------------------------------- -->
+    <header class="indexCarousel">
       <ul id="indexCarouselImgs">
         <li class="active">
           <div class="indexCarouselLabel">
@@ -124,9 +125,12 @@
         <li class="btn_unat"></li>
         <li class="btn_unat"></li>
       </ul>
-    </div>
+    </header>
 
+
+    <!-- 內文頁面 -->
     <div class="index-main-page">
+      <!-- 來當老闆 ---------------------------------------------- -->
       <div class="indexBossCircleBox">
         <div class="indexBossCircle">
           <img class="indexBoosStep" src="./images/step1.svg" alt="" />
@@ -162,7 +166,7 @@
           <div class="page-title-eng">Be The Boss　</div>
         </div>
       </div>
-
+      <!-- 攤商招募卡片 -->
       <div class="indexRecruitCardGroup">
         <!-- 高雄 -->
         <div class="indexRecruitCard">
@@ -267,7 +271,7 @@
       </div>
       
 
-
+      <!-- 本周天氣API ---------------------------------------------- -->
       <div class="indexWeek">
         <div class="weekMarkets">
           <div class="indexWeekTitle">
@@ -308,8 +312,6 @@
     
         </div>
       </div>
-
-
       <!-- 本周卡片 -->
       <div class="indexWeekCardBox">
         <div class="indexWeekCard">
@@ -327,7 +329,7 @@
                 我是市集的文字內容我是市集的文字內容我是市集的文字內容我是市集的文字內容我是市集的文字內容
                 我是市集的文字內容我是市集的文字內容我是市集的文字內容我是市集的文字內容
               </span>
-              <button class="indexWeekButton">點我報名</button>
+              <button class="indexWeekButton">更多資訊</button>
             </div>
 
             
@@ -348,7 +350,7 @@
                 我是市集的文字內容我是市集的文字內容我是市集的文字內容我是市集的文字內容我是市集的文字內容
                 我是市集的文字內容我是市集的文字內容我是市集的文字內容我是市集的文字內容
               </span>
-              <button class="indexWeekButton"><p>點我報名</p></button>
+              <button class="indexWeekButton"><p>更多資訊</p></button>
             </div>
 
             
@@ -368,7 +370,7 @@
                 我是市集的文字內容我是市集的文字內容我是市集的文字內容我是市集的文字內容我是市集的文字內容
                 我是市集的文字內容我是市集的文字內容我是市集的文字內容我是市集的文字內容
               </span>
-              <button class="indexWeekButton"><p>點我報名</p></button>
+              <button class="indexWeekButton"><p>更多資訊</p></button>
             </div>
 
             
@@ -388,22 +390,32 @@
                 我是市集的文字內容我是市集的文字內容我是市集的文字內容我是市集的文字內容我是市集的文字內容
                 我是市集的文字內容我是市集的文字內容我是市集的文字內容我是市集的文字內容
               </span>
-              <button class="indexWeekButton"><p>點我報名</p></button>
+              <button class="indexWeekButton"><p>更多資訊</p></button>
             </div>
         </div>
       </div>
-    </div>
+    
 
-    <!-- 我適合逛什麼市集 -->
-    <div class="indexMentalTest">
+    <!-- 我適合逛什麼市集 ---------------------------------------------- -->
+    <section class="indexMentalTest">
       <span class="mentalTestTittle">
        HEY!不知道要逛什麼市集嗎?
       </span>
       <button class="mentalTestButton">按我測驗></button>
-    </div>
+    </section>
 
-    <!-- 熱門文章 -->
-    <div class="indexArticlesCard">
+
+    
+    <!-- 熱門文章 ---------------------------------------------- -->
+    <section class="indexPagesArea">
+      <!-- 熱門文章 -->
+      <article class="indexArticlesArea">
+         <div class="indexPagesTitle">
+            <div class="page-title-ch">/熱門文章/</div>
+            <div class="page-title-eng">Hot Articles　</div>
+          </div>
+        <!-- 熱門文章一 -->
+        <div class="indexArticlesCard">
       <div class="articlesDate">
         <span class="articlesMonth">Nov</span>
         <span class="articlesDateLine"></span>
@@ -411,23 +423,94 @@
       </div>
       <img class="indexArticlesimg" src="./images/market_01.jpg" alt="" />
 
-      <div>
-        <span class="indexWeekCardTitle">我是市集標題</span>
-        <span class="indexWeekCardP">我是市集的文字內容我是市集的文字內容我是市集的文字內容我是市集的文字內容我是市集的文字內容我是市集的文字內容我是市集的文字內容我是市集的文字內容我是市集的文字內容</span>
+      <div class="indexArticlesTextBox">
+        <div class="indexArticlesText">
+          <span class="indexArticlesTitle">我是市集標題我是市集標題我是市集標題</span>
+          <span class="indexArticlesP">我是市集的文字內容我是市集的文字內容我是市集的文字內容我是市集的文字內容我是市集的文字內容我是市集的文字內容我是市集的文字內容我是市集的文字內容我是市集的文字內容</span>
+        </div>
+
+
+        <div class="indexArticlesActive">
+          <img src="./images/indexArticlesCardLike.svg" alt="">
+          <div class="indexArticlesEnter">
+            閱讀全文　<img src="./images/indexArticlesCardArrow.svg" alt="">
+          </div>
+        </div>
+
+
       </div>
+
+
       
-    </div>
+      
+      
+    
+      
+        </div>
+        <!-- 熱門文章二 -->
+        <div class="indexArticlesCard">
+      <div class="articlesDate">
+        <span class="articlesMonth">Nov</span>
+        <span class="articlesDateLine"></span>
+        <span class="articlesDay">15</span>
+      </div>
+      <img class="indexArticlesimg" src="./images/market_01.jpg" alt="" />
 
+      <div class="indexArticlesTextBox">
+        <div class="indexArticlesText">
+          <span class="indexArticlesTitle">我是市集標題我是市集標題我是市集標題</span>
+          <span class="indexArticlesP">我是市集的文字內容我是市集的文字內容我是市集的文字內容我是市集的文字內容我是市集的文字內容我是市集的文字內容我是市集的文字內容我是市集的文字內容我是市集的文字內容</span>
+        </div>
+
+
+        <div class="indexArticlesActive">
+          <img src="./images/indexArticlesCardLike.svg" alt="">
+          <div class="indexArticlesEnter">
+            閱讀全文　<img src="./images/indexArticlesCardArrow.svg" alt="">
+          </div>
+        </div>
+
+
+      </div>
+
+
+      
+      
+      
+    
+      
+        </div>
+      </article>
     <!-- 熱門討論 -->
+      <article class="indexDisscussionArea">
+        <div class="indexPagesTitle">
+          <div class="page-title-ch">/熱門討論/</div>
+          <div class="page-title-eng">Hot Disscussion　</div>
+        </div>
 
-    <div class="indexDisscussionCard">
-      <span class="DisscussionP">使用者名稱</span>
-      <span class="DisscussionTitle">我是市集標題</span>
-      <span class="DisscussionP">我是市集的文字內容我是市集的文字內容我是市集的文字內容我是市集的文字內容我是市集的文字內容我是市集的文字內容我是市集的文字內容我是市集的文字內容我是市集的文字內容</span>
-    </div>
-
-
-
+        <!-- 討論1 -->
+        <div class="indexDisscussionCard marletCYILight">
+          <span class="DisscussionP">使用者名稱</span>
+          <span class="DisscussionTitle">我是市集標題我是市集標題我是市集標題</span>
+          <span class="DisscussionP">我是市集的文字內容我是市集的文字內容我是市集的文字內容我是市集的文字內容 我是市集的文字內容我是市集的文字內容我是市集的文字內容我是市集的文字內容我是市集的文字內容</span>
+        </div>
+        <!-- 討論2 -->
+        <div class="indexDisscussionCard marletTNNLight">
+          <span class="DisscussionP ">使用者名稱</span>
+          <span class="DisscussionTitle">我是市集標題我是市集標題我是市集標題</span>
+          <span class="DisscussionP">我是市集的文字內容我是市集的文字內容我是市集的文字內容我是市集的文字內容我是市集的文字內容我是市集的文字內容我是市集的文字內容我是市集的文字內容我是市集的文字內容</span>
+        </div>
+        <!-- 討論3 -->
+        <div class="indexDisscussionCard marletKHHLight">
+          <span class="DisscussionP ">使用者名稱</span>
+          <span class="DisscussionTitle">我是市集標題我是市集標題我是市集標題</span>
+          <span class="DisscussionP">我是市集的文字內容我是市集的文字內容我是市集的文字內容我是市集的文字內容我是市集的文字內容我是市集的文字內容我是市集的文字內容我是市集的文字內容我是市集的文字內容</span>
+        </div>
+      
+      </article>
+    </section>
+  
+  </div>
 
 
     <!-- 內文結束 -->
