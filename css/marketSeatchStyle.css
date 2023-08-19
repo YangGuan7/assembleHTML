@@ -1,3 +1,57 @@
+* {
+  color: #4c4948;
+  font-family: "Roboto", sans-serif;
+  margin: 0;
+}
+/* 1、顏色及框線變數 */
+:root {
+  --pirmary-bg: #fdfbef;
+  --primary-text: #4c4948;
+  --white: #fff;
+  --pink: #ffcbcc;
+  --light-pink: #ffeaeb;
+  --blue: #9fcfef;
+  --light-blue: #d8eeff;
+  --green: #badf73;
+  --light-green: #eaf6d5;
+  --yellow: #fff57f;
+  --deep-yellow: #dac900;
+  --purple: #d2bdff;
+  --light-purple: #f1eaff;
+  --gray: #a5a4a3;
+  --light-gray: #a5a4a3;
+
+  --primary-font-family: Roboto;
+  --primary-border: 3px solid #4c4948;
+}
+.marletWH {
+  background-color: var(--white);
+}
+.marletKHH {
+  background-color: var(--blue);
+}
+.marletTNN {
+  background-color: var(--purple);
+}
+.marletPIF {
+  background-color: var(--green);
+}
+.marletCYI {
+  background-color: var(--pink);
+}
+.marletKHHLight {
+  background-color: var(--light-blue);
+}
+.marletTNNLight {
+  background-color: var(--light-purple);
+}
+.marletPIFLight {
+  background-color: var(--light-green);
+}
+.marletCYILight {
+  background-color: var(--light-pink);
+}
+
 .marketCardImg {
   border: var(--primary-border);
   width: 400px;
